@@ -44,6 +44,8 @@ the current sub-assembly being performed. The required task is then selected fro
 sub-assembly.
 
 ## System Architecture
+### System Settings
+
 ```bash
 └── settings
     ├── constants.py
@@ -53,6 +55,8 @@ sub-assembly.
 
 Files with system settings and vectors for landmark normalisation.
 
+### Robot Interface
+
 ```bash
 └── robot_setup
     └── iiwaPy3
@@ -60,6 +64,8 @@ Files with system settings and vectors for landmark normalisation.
 
 [Library iiwaPy3](https://github.com/Modi1987/iiwaPy3) for the interface
 between python and the KUKA iiwa robot.
+
+### Robot Connection and Task Management
 
 ```bash
 ├── io_classes
@@ -77,6 +83,8 @@ and to manage and run robot programs. They have been previously [developed
 for the design of a GUI](https://github.com/Modi1987/iiwaPy3) to 
 interact with a KUKA iiwa robot.
 
+### Arduino Code
+
 ```bash
 └── arduino_code
     └── arduino_code.ino
@@ -84,6 +92,8 @@ interact with a KUKA iiwa robot.
 Arduino code to facilitate communication between human and robot:
 - Two  buttons to send information to the robot;
 - Buzzer to receive information from the robot.
+
+### Main Process
 
 ```bash
 └── main.py
@@ -99,11 +109,15 @@ If the robot failed to connect but the model process is online the arduino board
 If a red button press is detected in the arduino board a system shutdown
 is triggered and two buzzes are played on the arduino board with descending frequencies.
 
+### Controller Process
+
 ```bash
 └── controller.py
 ```
 
 File to initialise the camera, model and robot processes.
+
+### Camera Process
 
 ```bash
 ├── camera.py
@@ -115,6 +129,8 @@ camera and converts it into hand landmarks using the
 [mediapipe library](https://ai.google.dev/edge/mediapipe/solutions/guide).
 The hand landmarks are then passed into a queue to be used by the model
 process.
+
+### Model Process
 
 ```bash
 ├── models
