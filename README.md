@@ -79,8 +79,8 @@ between python and the KUKA iiwa robot.
 ```
 
 Classes and tools developed to establish a connection with the robot
-and to manage and run robot programs. They have been previously [developed
-for the design of a GUI](https://github.com/Modi1987/iiwaPy3) to 
+and to manage and run robot programs. They have been previously developed
+for the [design of a GUI](https://github.com/Modi1987/iiwaPy3) to 
 interact with a KUKA iiwa robot.
 
 ### Arduino Code
@@ -90,7 +90,7 @@ interact with a KUKA iiwa robot.
     └── arduino_code.ino
 ```
 Arduino code to facilitate communication between human and robot:
-- Two  buttons to send information to the robot;
+- Two buttons to send information to the robot;
 - Buzzer to receive information from the robot.
 
 ### Main Process
@@ -106,8 +106,8 @@ The controller process is started after receiving the user input. If no errors o
 on startup, three buzzes are played on the arduino board with ascending frequencies. 
 If the robot failed to connect but the model process is online the arduino board buzzes twice.
 
-If a red button press is detected in the arduino board a system shutdown
-is triggered and two buzzes are played on the arduino board with descending frequencies.
+If a red button press is detected in the arduino board, a system shutdown
+is triggered and two buzzes are played with descending frequencies.
 
 ### Controller Process
 
