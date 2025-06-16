@@ -11,7 +11,7 @@ with its robot counterpart and the system correctly identifies when the robot sh
 action to do.
 
 The studied assembly corresponds to the previously developed
-[CT-Benchmark](https://github.com/Robotics-and-AI/collaborative-tasks-benchmark). It contains a 
+[CT Benchmark](https://github.com/Robotics-and-AI/collaborative-tasks-benchmark). It contains a 
 total of 6 sub-assemblies that can be assigned in any given order: Bridge, Dovetail, Hospital, 
 Museum + Triangle, Snap and Wheel. Each sub-assembly is comprised of a series of immutable 
 task modules assigned to the human or robot.
@@ -159,5 +159,5 @@ the sub-assembly being assembled.
 
 The provided code has been implemented for the specific case of a KUKA iiwa robot controlled
 with the [iiwaPy3 library](https://github.com/Modi1987/iiwaPy3) for the assembly of 
-the [CT-Benchmark](https://github.com/Robotics-and-AI/collaborative-tasks-benchmark), while using data collected by an Intel Realsense camera. For different
+the [CT Benchmark](https://github.com/Robotics-and-AI/collaborative-tasks-benchmark), while using data collected by an Intel Realsense camera. For different
 settings the code must be adapted. 
